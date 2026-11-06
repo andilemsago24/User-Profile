@@ -1,0 +1,147 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f5fa;
+  color: #25243a;
+}
+
+.dashboard {
+  min-height: 100vh;
+}
+
+.header {
+  background: white;
+  padding: 20px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px #00000010;
+}
+
+.header h2 {
+  color: #4f46e5;
+}
+
+.profile-container {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 25px;
+}
+
+.profile-card,
+.details-card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px #00000008;
+}
+
+.profile-card {
+  text-align: center;
+}
+
+.profile-picture {
+  display: block;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 20px;
+}
+
+.profile-card h1 {
+  font-size: 25px;
+  margin-bottom: 8px;
+  color: #1f2937;
+}
+
+.role {
+  color: #7c3aed;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+button {
+  background: #6554c0;
+  color: #ffffff;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #4939a0;
+}
+
+.details-card h2 {
+  margin-bottom: 15px;
+  margin-top: 10px;
+  color: #312e81;
+}
+
+.details-card p {
+  color: #4b5563;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.skill {
+  background: #ede9fe;
+  color: #5b21b6;
+  padding: 9px 15px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.edit-form {
+  margin-top: 30px;
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+}
+
+.edit-form label {
+  display: block;
+  margin: 15px 0 7px;
+}
+
+.edit-form input,
+.edit-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+  font: inherit;
+}
+
+.edit-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.edit-form button {
+  margin-top: 20px;
+}
+
+@media (max-width: 700px) {
+  .profile-container {
+    grid-template-columns: 1fr;
+    margin: 20px auto;
+  }
+}
